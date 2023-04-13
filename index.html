@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Аттестационное задание</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+   <script rel="script" src="./js/script.js" defer></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="main-form">
+            <form method="post" action="" id="index_form_register" name="index_form" class="main-form__form" style="display:block">
+                <div class="main-form__form-point"><a href="" onclick="changeForm(); return false;">Авторизироваться</a></div>
+                <div class="main-form__form-wrap">
+                    <h3>Регистрация</h3>
+                    <div class="main-form__form-input">
+                <label for="email">Email</label>
+                <input id="email" class="input-form" name="email" placeholder="Введите email" value="">
+                        <span class="error"></span>
+                    </div>
+                    <div class="main-form__form-input">
+                        <label for="password">Пароль</label>
+                <input id="password" class="input-form" name="password" placeholder="Введите пароль" value="">
+                        <span class="error"></span>
+                        </div>
+                    <div class="main-form__form-checkbox">
+                <input type="checkbox" id="form-checkbox" name="form-checkbox" checked><div><label for="form-checkbox">Я согласен получать обновления на почту.</label></div></div>
+                <button type="submit" class="main-form__form-button">Зарегистрироваться</button>
+                </div>
+            </form>
+            <form method="post" action="" id="index_form_login" name="index_form" class="main-form__form" style="display:none">
+                <div class="main-form__form-point"><a href="" onclick="changeForm(); return false;">Регистрация</a></div>
+                <div class="main-form__form-wrap">
+                    <h3>Вход</h3>
+                    <div class="main-form__form-input">
+                <label for="email">Email</label>
+                <input id="emailL" class="input-form" name="email" placeholder="Введите email" value="">
+                        <span class="error"></span>
+                    </div>
+                    <div class="main-form__form-input">
+                        <label for="password">Пароль</label>
+                <input id="passwordL" class="input-form" name="password" placeholder="Введите пароль" value="">
+                        <span class="error"></span>
+                        </div>
+                    <div class="main-form__form-checkbox">
+                <input type="checkbox" id="form-checkbox" name="form-checkbox" checked><div><label for="form-checkbox">Я согласен с <a href="">Правилами пользования приложением</a>.</label></div></div>
+                <button type="submit" class="main-form__form-button">Вход</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
